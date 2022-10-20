@@ -27,17 +27,18 @@ function TopNews() {
         drag: 'free',
         gap: '2rem',
         rewind: true,
-        height: 600,
         autoplay: true,
         pauseOnHover: false
       }}>
         {topNews.map((article) => {
           return (
-            <SplideSlide key={article.id}>
-              <div className='card'>
-                <img src={article.urlToImage} alt={article.title} />
-                <p>{article.title}</p>
-              </div> 
+            <SplideSlide key={article.title}>
+              <a href={article.url}>
+                <div className='card'>
+                  <img src={article.urlToImage} alt={article.title} />
+                  <p>{article.title}</p>
+                </div> 
+              </a>
             </SplideSlide>
           )
           })}

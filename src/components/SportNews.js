@@ -24,15 +24,17 @@ function SportNews() {
           arrows: true,
           pagination: false,
           drag: 'free',
-          gap: '2rem'
+          gap: '1rem'
         }}>
           {sportNews.map((article) => {
             return (
-              <SplideSlide>
-                <div className='card-sport'>
-                  <img src={article.urlToImage} alt={article.title}/>
-                  <p>{article.title}</p>
-                </div>
+              <SplideSlide key={article.title}>
+                <a href={article.url}>
+                  <div className='card-sport'>
+                    <img src={article.urlToImage} alt={article.title}/>
+                    <p>{article.title}</p>
+                  </div>
+                </a>
               </SplideSlide>
             )
           })}

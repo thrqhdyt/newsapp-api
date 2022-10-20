@@ -1,0 +1,61 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-top: 4rem;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo h1 {
+  font-size: 1.7rem;
+  margin-left: 10px;
+  margin-top: 0.5rem;
+  color: rgb(175, 130, 16);
+}
+
+.logo svg {
+  font-size: 4.5rem;
+  color: rgb(175, 130, 16);
+}
+
+.switch {
+  display: flex;
+  align-items: center;
+}
+
+.switch label {
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-right: 0.8rem;
+}
+
+#light label {
+  color: black;
+}
+
+#dark label {
+  color: #fff;
+}
+
+@media screen and (max-width: 700px) {
+  .navbar {
+    flex-direction: column;
+    padding-top: 2rem;
+  }
+
+  .logo {
+    margin-bottom: 2rem;
+  }
+
+  .switch {
+    margin-top: 1.5rem;
+  }
+
+  .switch label {
+    font-size: 1rem;
+  }
+}

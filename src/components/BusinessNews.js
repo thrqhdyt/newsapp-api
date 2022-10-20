@@ -24,15 +24,17 @@ function BusinessNews() {
         arrows: true,
         pagination: false,
         drag: 'free',
-        gap: '1.5rem'
+        gap: '1rem'
       }}>
         {BusinessNews.map((article) => {
           return (
-            <SplideSlide>
-              <div className='card-business'>
-                <img src={article.urlToImage} alt={article.title} />
-                <p>{article.title}</p>
-              </div>
+            <SplideSlide key={article.title}>
+              <a href={article.url}>
+                <div className='card-business'>
+                  <img src={article.urlToImage} alt={article.title} />
+                  <p>{article.title}</p>
+                </div>
+              </a>
             </SplideSlide>
           )
         })}

@@ -1,5 +1,6 @@
 .business-news {
-  margin: 4rem 0rem;
+  margin-top: 4rem;
+  padding-bottom: 8rem;
 }
 
 .business-news h2 {
@@ -39,4 +40,26 @@
   justify-content: center;
   align-items: center;
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+
+
+@media screen and (max-width: 700px) {
+  .business-news {
+    padding-bottom: 4rem;
+  }
+  .business-news h2 {
+    font-size: 1.2rem;
+  }
+
+  .card-business {
+    min-height: 140px;
+  }
+
+  .card-business img {
+    border-radius: 0.5rem;
+  }
+
+  .card-business p {
+    font-size: 0.4rem;
+  }
 }

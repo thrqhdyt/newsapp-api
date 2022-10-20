@@ -12,7 +12,18 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
   padding: 0 5%;
+}
+
+#light {
+  background-color: #fff;
+}
+
+#dark {
+  background-color: rgb(1, 1, 19);
 }
 
 code {

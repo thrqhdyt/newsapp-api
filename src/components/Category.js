@@ -17,7 +17,7 @@ function Category() {
       <NavLink className='nav-list' to={'/category/sports'}>
         <h4>Sports</h4>
       </NavLink>
-      <NavLink className='nav-list' to={'/category/technology'}>
+      <NavLink className='nav-list item5' to={'/category/technology'}>
         <h4>Technology</h4>
       </NavLink>
     </div>
